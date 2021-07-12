@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+#stopwatchSection {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(270deg, #1dd881 0%, #51ffae 74%);
+}
+
+.container {
+    width: 50rem;
+    min-height: 35rem;
+    margin: 2.5rem auto;
+    padding: 3rem 3.5rem;
+    border: 0.4rem solid #296e6e;
+    border-radius: 0.4rem;
+    box-shadow: 0.3rem 0.5rem 1.3rem 0rem #1f1f1f;
+    display: grid;
+    grid-template: repeat(1/ 1fr) / repeat(2, 1fr);
+    grid-gap: 2rem;
+    background: #033333;
+}
+
+.display {
+    font-size: 5rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 0rem;
+}
+
+.controls {
+    width: calc(100% - 3rem);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn {
+    font-size: 1.4rem;
+    padding: 1rem 3rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    outline: none;
+    border-width: 0.2rem;
+    border-style: solid;
+}
+
+.btn-start {
+    background: #1dd881;
+    border-color: #1dd881;
+}
+
+.btn-pause {
+    background: #51ffae;
+    border-color: #51ffae;
+}
+
+.btn-reset {
+    background: #ff523b;
+    border-color: #ff523b;
+}
+
+.btn:hover {
+    background: transparent;
+}
