@@ -25,6 +25,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     background: linear-gradient(270deg, #1dd881 0%, #51ffae 74%);
 }
 
@@ -87,4 +88,25 @@ body {
 
 .btn:hover {
     background: transparent;
+}
+
+.author-text {
+    color: #121212;
+    padding: 1rem 0rem;
+    text-align: center;
+}
+
+.author-text p {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+
+.author-text p a {
+    color: #121212;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.author-text p a:hover {
+    text-decoration: underline;
 }
